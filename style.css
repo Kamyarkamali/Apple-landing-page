@@ -470,6 +470,114 @@ h2 {
   color: gray;
 }
 
+/* slider3 */
+
+.slider-container3 {
+  position: relative;
+  width: 130%; /* عرض 100% از عرض کل صفحه */
+  max-width: 1200px; /* حداکثر عرض اسلایدر */
+  overflow: hidden;
+  margin: 5rem auto; /* مرکز کردن با استفاده از auto */
+  border-radius: 10px;
+}
+
+.slider3 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide3 {
+  flex: 0 0 auto; /* هر اسلاید به اندازه محتوا تنظیم می‌شود */
+  margin: 3px; /* فاصله بین تصاویر */
+  box-sizing: border-box;
+}
+
+.slide3 img {
+  width: 400px;
+  height: 500px; /* عرض و ارتفاع تصاویر */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description3 {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.description2white {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.description2black {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pdesc {
+  font-size: 29px;
+}
+
+.prev-btn3,
+.next-btn3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(207, 189, 189, 0.249);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.prev-btn3 {
+  left: 0;
+}
+
+.next-btn3 {
+  right: 0;
+}
+
+.container4 {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.h3section4 {
+  position: absolute;
+  top: 10px;
+  font-size: 28px;
+}
+
+.h3section4 span {
+  color: gray;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .slide2 {
