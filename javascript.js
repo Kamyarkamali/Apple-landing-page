@@ -91,4 +91,57 @@ document.addEventListener("DOMContentLoaded", function () {
       updateSlider2();
     }
   });
+
+  // کد اسلایدر سوم
+  const slider3 = document.querySelector(".slider3");
+  const slides3 = document.querySelectorAll(".slide3");
+  const prevBtn3 = document.querySelector(".prev-btn3");
+  const nextBtn3 = document.querySelector(".next-btn3");
+
+  let currentIndex3 = 0;
+  const slidesToShow3 = 3;
+  const maxIndex3 = slides3.length - slidesToShow3;
+
+  function updateSlider3() {
+    slider3.style.transform = `translateX(-${
+      currentIndex3 * (100 / slidesToShow3)
+    }%)`;
+  }
+
+  prevBtn3.addEventListener("click", () => {
+    if (currentIndex3 > 0) {
+      currentIndex3--;
+      updateSlider3();
+    }
+  });
+
+  nextBtn3.addEventListener("click", () => {
+    if (currentIndex3 < maxIndex3) {
+      currentIndex3++;
+      updateSlider3();
+    }
+  });
+
+  // slider4
+  const slider5 = document.querySelector(".slider5");
+  const prevBtn5 = document.querySelector(".prev-btn5");
+  const nextBtn5 = document.querySelector(".next-btn5");
+
+  let currentSlide5 = 0;
+  const totalSlides5 = document.querySelectorAll(".slide5").length;
+
+  prevBtn5.addEventListener("click", () => {
+    if (currentSlide5 > 0) {
+      currentSlide5--;
+      slider5.style.transform = `translateX(-${currentSlide5 * 100}%)`;
+    }
+  });
+
+  nextBtn5.addEventListener("click", () => {
+    if (currentSlide5 < totalSlides5 - 6) {
+      // تعداد کل باکس‌ها منهای تعداد نمایش داده شده
+      currentSlide5++;
+      slider5.style.transform = `translateX(-${currentSlide5 * 100}%)`;
+    }
+  });
 });
