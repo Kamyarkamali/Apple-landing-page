@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // کد منو
   const iconMenu = document.querySelector(".iconmenu");
   const hamburgerMenu = document.querySelector(".habmurgerMenu");
   const closeButton = document.querySelector(".close");
@@ -31,17 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 300); // زمان انیمیشن مطابق با transition در CSS
   }
 
-  // کد اسلایدر
+  // کد اسلایدر اول
   const slider = document.querySelector(".slider");
   const slides = document.querySelectorAll(".slide");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
 
   let currentIndex = 0;
-  const maxIndex = slides.length - 6; // تعداد حداکثری از اسلایدها که می‌توان به جلو حرکت کرد
+  const slidesToShow = 6;
+  const maxIndex = slides.length - slidesToShow;
 
   function updateSlider() {
-    slider.style.transform = `translateX(-${currentIndex * (100 / 6)}%)`;
+    slider.style.transform = `translateX(-${
+      currentIndex * (100 / slidesToShow)
+    }%)`;
   }
 
   prevBtn.addEventListener("click", () => {
@@ -55,6 +59,36 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentIndex < maxIndex) {
       currentIndex++;
       updateSlider();
+    }
+  });
+
+  // کد اسلایدر دوم
+  const slider2 = document.querySelector(".slider2");
+  const slides2 = document.querySelectorAll(".slide2");
+  const prevBtn2 = document.querySelector(".prev-btn2");
+  const nextBtn2 = document.querySelector(".next-btn2");
+
+  let currentIndex2 = 0;
+  const slidesToShow2 = 3;
+  const maxIndex2 = slides2.length - slidesToShow2;
+
+  function updateSlider2() {
+    slider2.style.transform = `translateX(-${
+      currentIndex2 * (100 / slidesToShow2)
+    }%)`;
+  }
+
+  prevBtn2.addEventListener("click", () => {
+    if (currentIndex2 > 0) {
+      currentIndex2--;
+      updateSlider2();
+    }
+  });
+
+  nextBtn2.addEventListener("click", () => {
+    if (currentIndex2 < maxIndex2) {
+      currentIndex2++;
+      updateSlider2();
     }
   });
 });
