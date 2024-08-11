@@ -144,4 +144,158 @@ document.addEventListener("DOMContentLoaded", function () {
       slider5.style.transform = `translateX(-${currentSlide5 * 100}%)`;
     }
   });
+
+  // کد اسلایدر 5
+  const slider6 = document.querySelector(".slider6");
+  const slides6 = document.querySelectorAll(".slide6");
+  const prevBtn6 = document.querySelector(".prev-btn6");
+  const nextBtn6 = document.querySelector(".next-btn6");
+
+  let currentIndex6 = 0;
+  const slidesToShow6 = 4;
+  const maxIndex6 = slides6.length - slidesToShow6;
+
+  function updateSlider6() {
+    slider6.style.transform = `translateX(-${
+      currentIndex6 * (100 / slidesToShow6)
+    }%)`;
+  }
+
+  prevBtn6.addEventListener("click", () => {
+    if (currentIndex6 > 0) {
+      currentIndex6--;
+      updateSlider6();
+    }
+  });
+
+  nextBtn6.addEventListener("click", () => {
+    if (currentIndex6 < maxIndex6) {
+      currentIndex6++;
+      updateSlider6();
+    }
+  });
+
+  // کد اسلایدر 6
+
+  const slider7 = document.querySelector(".slider7");
+  const slides7 = document.querySelectorAll(".slide7");
+  const prevBtn7 = document.querySelector(".prev-btn7");
+  const nextBtn7 = document.querySelector(".next-btn7");
+
+  let currentIndex7 = 0;
+  const slidesToShow7 = 4;
+  const maxIndex7 = slides7.length - slidesToShow6;
+
+  function updateSlider7() {
+    slider7.style.transform = `translateX(-${
+      currentIndex7 * (100 / slidesToShow7)
+    }%)`;
+  }
+
+  prevBtn7.addEventListener("click", () => {
+    if (currentIndex7 > 0) {
+      currentIndex7--;
+      updateSlider7();
+    }
+  });
+
+  nextBtn7.addEventListener("click", () => {
+    if (currentIndex7 < maxIndex7) {
+      currentIndex7++;
+      updateSlider7();
+    }
+  });
+
+  // کد اسلایدر 7
+
+  const slider8 = document.querySelector(".slider7");
+  const slides8 = document.querySelectorAll(".slide7");
+  const prevBtn8 = document.querySelector(".prev-btn7");
+  const nextBtn8 = document.querySelector(".next-btn7");
+
+  let currentIndex8 = 0;
+  const slidesToShow8 = 4;
+  const maxIndex8 = slides8.length - slidesToShow6;
+
+  function updateSlider8() {
+    slider8.style.transform = `translateX(-${
+      currentIndex8 * (100 / slidesToShow8)
+    }%)`;
+  }
+
+  prevBtn8.addEventListener("click", () => {
+    if (currentIndex8 > 0) {
+      currentIndex8--;
+      updateSlider8();
+    }
+  });
+
+  nextBtn8.addEventListener("click", () => {
+    if (currentIndex8 < maxIndex8) {
+      currentIndex8++;
+      updateSlider8();
+    }
+  });
+
+  // slider8
+
+  const slider9 = document.querySelector(".slider8");
+  const slides9 = document.querySelectorAll(".slide8");
+  const prevBtn9 = document.querySelector(".prev-btn8");
+  const nextBtn9 = document.querySelector(".next-btn8");
+
+  let currentIndex9 = 0;
+  const slidesToShow9 = 1.8;
+  const maxIndex9 = slides9.length - slidesToShow6;
+
+  function updateSlider9() {
+    slider9.style.transform = `translateX(-${
+      currentIndex9 * (100 / slidesToShow9)
+    }%)`;
+  }
+
+  prevBtn9.addEventListener("click", () => {
+    if (currentIndex9 > 0) {
+      currentIndex9--;
+      updateSlider9();
+    }
+  });
+
+  nextBtn9.addEventListener("click", () => {
+    if (currentIndex9 < maxIndex9) {
+      currentIndex9++;
+      updateSlider9();
+    }
+  });
+
+  // slider9
+
+  const slider10 = document.querySelector(".slider9");
+  const slides10 = document.querySelectorAll(".slide9");
+  const prevBtn10 = document.querySelector(".prev-btn9");
+  const nextBtn10 = document.querySelector(".next-btn9");
+
+  let currentIndex10 = 0;
+  const slidesToShow10 = 1.4;
+  const maxIndex10 = slides10.length - slidesToShow6;
+
+  function updateSlider10() {
+    slider10.style.transform = `translateX(-${
+      currentIndex10 * (100 / slidesToShow10)
+    }%)`;
+  }
+
+  prevBtn10.addEventListener("click", () => {
+    if (currentIndex10 > 0) {
+      currentIndex10--;
+      updateSlider10();
+    }
+  });
+
+  nextBtn10.addEventListener("click", () => {
+    if (currentIndex10 < maxIndex10) {
+      currentIndex10++;
+      updateSlider10();
+    }
+  });
 });

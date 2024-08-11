@@ -555,7 +555,7 @@ h2 {
   border-radius: 50%;
 }
 
-.prev-btn5 {
+.prev-btn3 {
   left: 0;
 }
 
@@ -594,7 +594,7 @@ h2 {
 }
 
 .slide5 {
-  min-width: 16.66%; /* شش باکس در هر صفحه */
+  min-width: 16.66%;
   box-sizing: border-box;
   padding: 10px;
   margin: 0 10px;
@@ -679,11 +679,20 @@ h2 {
   font-weight: 600;
 }
 
+.h3section5 {
+  top: 10px;
+  font-size: 28px;
+}
+
+.h3section5 span {
+  color: gray;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .slide2 {
-    width: 100%; /* نمایش یک تصویر در موبایل */
-    margin: 0; /* حذف فاصله در موبایل */
+    width: 100%;
+    margin: 0;
   }
   .description2white {
     text-align: center;
@@ -693,7 +702,512 @@ h2 {
     text-align: center;
     width: 100%;
   }
+  .slider-container5 {
+    width: 100%;
+  }
 }
+
+/* slider5 */
+
+.slider-container6 {
+  position: relative;
+  width: 130%; /* عرض 100% از عرض کل صفحه */
+  max-width: 1200px; /* حداکثر عرض اسلایدر */
+  overflow: hidden;
+  margin: 5rem auto; /* مرکز کردن با استفاده از auto */
+  border-radius: 10px;
+}
+
+.slider6 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-container6 .slider6 .slide6 img {
+  width: 200px;
+  height: 200px;
+}
+
+.slide6 {
+  background-color: #ffff;
+  flex: 0 0 auto; /* هر اسلاید به اندازه محتوا تنظیم می‌شود */
+  margin: 3px; /* فاصله بین تصاویر */
+  box-sizing: border-box;
+  width: 300px;
+  height: 430px;
+  display: flex;
+  max-width: 1200px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-shadow: 2px 10px 5px 0px rgba(232, 211, 232, 1);
+  -moz-box-shadow: 2px 10px 5px 0px rgba(232, 211, 232, 1);
+  box-shadow: 2px 10px 5px 0px rgba(232, 211, 232, 1);
+}
+
+.slide6 img {
+  width: 400px;
+  height: 500px; /* عرض و ارتفاع تصاویر */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.descrip {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 15px;
+  line-height: 25px;
+}
+
+.pdescbotn {
+  position: absolute;
+  font-size: 10px;
+  left: 10px;
+  bottom: 20px;
+  line-height: 30px;
+}
+
+.pdescbom {
+  font-size: 16px;
+}
+
+.description2white {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.description2black {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.prev-btn6,
+.next-btn6 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(207, 189, 189, 0.249);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.ppppp {
+  font-size: 17px;
+  text-align: left;
+}
+
+.descrip:first-child {
+  font-weight: 600;
+}
+
+.prev-btn6 {
+  left: 0;
+}
+
+.next-btn6 {
+  right: 0;
+}
+
+/* slider5 */
+
+/*slider6 */
+
+.slider-container7 {
+  position: relative;
+  width: 130%; /* عرض 100% از عرض کل صفحه */
+  max-width: 1200px; /* حداکثر عرض اسلایدر */
+  overflow: hidden;
+  margin: 5rem auto; /* مرکز کردن با استفاده از auto */
+  border-radius: 10px;
+}
+
+.slider7 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-container7 .slider7 .slide7 img {
+  width: 200px;
+  height: 200px;
+}
+
+.slide7 {
+  background-color: #ffff;
+  flex: 0 0 auto; /* هر اسلاید به اندازه محتوا تنظیم می‌شود */
+  margin: 3px; /* فاصله بین تصاویر */
+  box-sizing: border-box;
+  width: 300px;
+  height: 430px;
+  display: flex;
+  max-width: 1200px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-shadow: 2px 10px 5px 0px rgba(232, 211, 232, 1);
+  -moz-box-shadow: 2px 10px 5px 0px rgba(232, 211, 232, 1);
+  box-shadow: 2px 10px 5px 0px rgba(232, 211, 232, 1);
+}
+
+.slide7 img {
+  width: 400px;
+  height: 500px; /* عرض و ارتفاع تصاویر */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.descrip {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 15px;
+  line-height: 25px;
+}
+
+.pdescbotn {
+  position: absolute;
+  font-size: 10px;
+  left: 10px;
+  bottom: 20px;
+  line-height: 30px;
+}
+
+.pdescbom {
+  font-size: 16px;
+}
+
+.description2white {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.description2black {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.prev-btn7,
+.next-btn7 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(207, 189, 189, 0.249);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.ppppp {
+  font-size: 17px;
+  text-align: left;
+}
+
+.descrip:first-child {
+  font-weight: 600;
+}
+
+.prev-btn7 {
+  left: 0;
+}
+
+.next-btn7 {
+  right: 0;
+}
+
+/*slider6 */
+
+
+
+/* slider7 */
+
+
+.container8 {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.h3section8 {
+  position: absolute;
+  top: 10px;
+  font-size: 28px;
+}
+
+.h3section8 span {
+  color: gray;
+}
+
+/* slider3 */
+
+.slider-container8 {
+  position: relative;
+  width: 130%; /* عرض 100% از عرض کل صفحه */
+  max-width: 1200px; /* حداکثر عرض اسلایدر */
+  overflow: hidden;
+  margin: 5rem auto; /* مرکز کردن با استفاده از auto */
+  border-radius: 10px;
+}
+
+.slider8 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide8 {
+  flex: 0 0 auto; /* هر اسلاید به اندازه محتوا تنظیم می‌شود */
+  margin: 3px; /* فاصله بین تصاویر */
+  box-sizing: border-box;
+}
+
+.slide8 img {
+  width: 400px;
+  height: 500px; /* عرض و ارتفاع تصاویر */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description8 {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.description2white {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.description2black {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pdesc {
+  font-size: 29px;
+}
+
+.prev-btn8,
+.next-btn8 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(207, 189, 189, 0.249);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.prev-btn8 {
+  left: 0;
+}
+
+.next-btn8 {
+  right: 0;
+}
+
+
+/* slider7 */
+
+
+/* slider8 */
+
+
+.slider-container9 {
+  position: relative;
+  width: 130%; /* عرض 100% از عرض کل صفحه */
+  max-width: 1200px; /* حداکثر عرض اسلایدر */
+  overflow: hidden;
+  margin: 5rem auto; /* مرکز کردن با استفاده از auto */
+  border-radius: 10px;
+}
+
+.slider9 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide9 {
+  flex: 0 0 auto; /* هر اسلاید به اندازه محتوا تنظیم می‌شود */
+  margin: 3px; /* فاصله بین تصاویر */
+  box-sizing: border-box;
+}
+
+.slide9 img {
+  width: 400px;
+  height: 500px; /* عرض و ارتفاع تصاویر */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description9 {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.description2white {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.description2black {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.description2blacknew{
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pdesc {
+  font-size: 29px;
+}
+
+.prev-btn9,
+.next-btn9 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(207, 189, 189, 0.249);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.prev-btn9 {
+  left: 0;
+}
+
+.next-btn9 {
+  right: 0;
+}
+
+
+/* slider8 */
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -703,11 +1217,21 @@ h2 {
   .slide2 img {
     width: fit-content;
   }
+  .slide6 {
+    width: 100%; /* نمایش یک تصویر در موبایل */
+  }
+  .slide6 img {
+    width: fit-content;
+  }
+  .icon-box img {
+    width: 80px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slide {
     min-width: 100%; /* Show 1 image on mobile */
   }
+
 }
 
 @media screen and (max-width: 877px) {
@@ -721,7 +1245,6 @@ h2 {
   }
   .slide {
     width: 10px;
-  }
 }
 
 @media screen and (min-width: 829px) and (max-width: 1085px) {
@@ -737,24 +1260,61 @@ h2 {
   .slide3 img {
     width: 500px;
   }
+  .slide5 img {
+    width: 500px;
+  }
+  .slide6 img {
+    width: 500px;
+  }
+  .icon-box img {
+    width: 100px;
+  }
+
+  .slide6{
+    width:300px;
+  }
+
   .description2black {
     justify-content: start;
     width: 90%;
   }
+
+  .description2black6 {
+    justify-content: start;
+    width: 90%;
+  }
+
   .description2white {
     justify-content: start;
     width: 90%;
   }
+
+  .description2white6 {
+    justify-content: start;
+    width: 90%;
+  }
+
   .slider-container2 {
     width: 100%;
   }
   .slider-container3 {
     width: 100%;
   }
+  .slider-container6 {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .slide2 {
     flex: auto;
   }
   .slide3 {
+    flex: auto;
+  }
+  .slide5 {
+    flex: auto;
+  }
+  .slide6 {
     flex: auto;
   }
 }
@@ -784,6 +1344,12 @@ h2 {
   .description2white {
     justify-content: start;
     width: 60%;
+  }
+  .slide6{
+    width:300px;
+  }
+  .slide7{
+    width:300px;
   }
 }
 
