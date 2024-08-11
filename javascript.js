@@ -298,4 +298,86 @@ document.addEventListener("DOMContentLoaded", function () {
       updateSlider10();
     }
   });
+
+  document.querySelectorAll(".menu-item").forEach((item) => {
+    item.addEventListener("mouseover", function () {
+      document.querySelectorAll(".menu-content").forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      const targetMenu = document.getElementById(
+        this.getAttribute("data-menu")
+      );
+      targetMenu.classList.add("active");
+
+      const megaMenu = document.querySelector(".mega-menu");
+      megaMenu.classList.add("show");
+
+      document.querySelector(".allContainer").classList.add("blur-background");
+    });
+
+    item.addEventListener("mouseout", function () {
+      const megaMenu = document.querySelector(".mega-menu");
+      megaMenu.classList.remove("show");
+
+      document
+        .querySelector(".allContainer")
+        .classList.remove("blur-background");
+    });
+  });
+
+  document
+    .querySelector(".mega-menu")
+    .addEventListener("mouseover", function () {
+      this.classList.add("show");
+      document.querySelector(".allContainer").classList.add("blur-background");
+    });
+
+  document
+    .querySelector(".mega-menu")
+    .addEventListener("mouseout", function () {
+      this.classList.remove("show");
+      document
+        .querySelector(".allContainer")
+        .classList.remove("blur-background");
+    });
+
+  document.querySelectorAll(".menu-item").forEach((item) => {
+    item.addEventListener("mouseover", function () {
+      document.querySelectorAll(".menu-content").forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      const targetMenu = document.getElementById(
+        this.getAttribute("data-menu")
+      );
+      targetMenu.classList.add("active");
+
+      const megaMenu = document.querySelector(".mega-menu");
+      megaMenu.classList.add("show");
+
+      document.body.classList.add("blurred"); // اضافه کردن کلاس بلور به body
+    });
+
+    item.addEventListener("mouseout", function () {
+      const megaMenu = document.querySelector(".mega-menu");
+      megaMenu.classList.remove("show");
+
+      document.body.classList.remove("blurred"); // حذف کلاس بلور از body
+    });
+  });
+
+  document
+    .querySelector(".mega-menu")
+    .addEventListener("mouseover", function () {
+      this.classList.add("show");
+      document.body.classList.add("blurred"); // اضافه کردن کلاس بلور به body
+    });
+
+  document
+    .querySelector(".mega-menu")
+    .addEventListener("mouseout", function () {
+      this.classList.remove("show");
+      document.body.classList.remove("blurred"); // حذف کلاس بلور از body
+    });
 });
